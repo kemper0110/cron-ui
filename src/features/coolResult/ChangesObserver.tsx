@@ -19,9 +19,9 @@ export const ChangesObserver = () => {
     useEffect(() => {
         console.log("generating")
         try {
+            if (type === undefined) return
             const result = (
                 () => {
-                    if (type === undefined) return ""
                     switch (type) {
                         case ScheduleType.minutes:
                             return generateMinutes(minutes)
