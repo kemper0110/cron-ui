@@ -10,7 +10,7 @@ export const Schedule = () => {
     return (
         <fieldset className={'min-w-[300px] border py-3 px-5 flex flex-col items-start'}>
             <legend className={'text-left px-2'}>Schedule</legend>
-            <Undefined/>
+            <Custom/>
             <Minutes/>
             <Daily/>
             <Weekly/>
@@ -18,7 +18,7 @@ export const Schedule = () => {
     );
 };
 
-const Undefined = () => {
+const Custom = () => {
     const type = useSelector((state: RootState) => state.schedule.type)
     const dispatch = useDispatch<AppDispatch>()
     return (

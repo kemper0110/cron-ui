@@ -11,7 +11,6 @@ function App() {
         <div className={'text-2xl'}>
             <Schedule/>
             <ResultSelector/>
-
         </div>
     )
 }
