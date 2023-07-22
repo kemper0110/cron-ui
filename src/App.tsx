@@ -19,7 +19,7 @@ function App() {
 function ResultSelector() {
     const [checked, setChecked] = useState(false)
     return (
-        <div className={'flex flex-col'}>
+        <div className={'flex flex-col gap-2'}>
             <label>
                 <input type={'checkbox'} checked={checked} onChange={e => setChecked(e.target.checked)}/>
                 <span className={'ml-3'}>interactive mode(beta)</span>

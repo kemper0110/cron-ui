@@ -23,7 +23,7 @@ export const CoolResult = () => {
             <input value={result ?? ""} onChange={onInputChange}/>
             {
                 error ? (
-                    <span>{error}</span>
+                    <span className={'text-red-400'}>{error}</span>
                 ) : null
             }
         </div>

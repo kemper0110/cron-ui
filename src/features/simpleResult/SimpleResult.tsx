@@ -16,9 +16,7 @@ const SimpleResult = () => {
                 }}/>
                 {
                     error ? (
-                        <span>
-                        {error}
-                    </span>
+                        <span className={'text-red-400'}>{error}</span>
                     ) : null
                 }
             </div>
